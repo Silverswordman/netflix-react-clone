@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NetflixNav from "./Components/NetflixNav";
 import NetflixFooter from "./Components/NetflixFooter";
 import NetflixRow from "./Components/NetflixRow";
-import NetflixtvShows from "./NetflixtvShows";
+import NetflixtvShows from "./Components/NetflixtvShows";
 
 function App() {
   return (
