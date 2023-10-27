@@ -34,7 +34,7 @@ class NetflixHome extends Component {
       <Container>
         <Row>
           {films.map((film) => (
-            <Col key={film.imdbID} xs={6} md={4} lg={2}>
+            <Col key={film.imdbID} xs={6} md={4} lg={2}  id="cardfilm">
               <SingleFilmCard movie={film} />
             </Col>
           ))}
