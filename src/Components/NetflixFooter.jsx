@@ -3,13 +3,19 @@ import { ListGroup } from "react-bootstrap";
 
 function NetflixFooter() {
   return (
-    <Card className="bg-dark text-center text-white b-none p-0 m-0 ">
+    <Card className="bg-dark text-center text-white b-none p-0 py-5 border-0">
       <Container className="w-75">
-        <Row className="text-start">
-          <Col lg={12}>
+        <Row className="text-start ps-5 text-white-50 w-50 ">
+          <Col xs={1}>
             <i class="bi bi-facebook"></i>
+          </Col>
+          <Col xs={1}>
             <i class="bi bi-instagram"></i>
+          </Col>
+          <Col xs={1}>
             <i class="bi bi-twitter"></i>
+          </Col>
+          <Col xs={1} className="flex-grow-1">
             <i class="bi bi-youtube"></i>
           </Col>
         </Row>
