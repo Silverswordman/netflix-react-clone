@@ -7,16 +7,16 @@ function NetflixFooter() {
       <Container className="w-75">
         <Row className="text-start ps-5 text-white-50 w-50 ">
           <Col xs={1}>
-            <i class="bi bi-facebook"></i>
+            <i className="bi bi-facebook"></i>
           </Col>
           <Col xs={1}>
-            <i class="bi bi-instagram"></i>
+            <i className="bi bi-instagram"></i>
           </Col>
           <Col xs={1}>
-            <i class="bi bi-twitter"></i>
+            <i className="bi bi-twitter"></i>
           </Col>
           <Col xs={1} className="flex-grow-1">
-            <i class="bi bi-youtube"></i>
+            <i className="bi bi-youtube"></i>
           </Col>
         </Row>
       </Container>

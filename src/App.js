@@ -11,7 +11,7 @@ import MovieDetail from "./Components/MovieDetail";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App h-100 ">
+      <div className="App h-100 bg-dark">
         <Container fluid className="bg-dark text-white h-100 flex-grow-1 ">
           <NetflixNav />
           <div className="flex-grow-1 ">

@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import Dropdown from "react-bootstrap/Dropdown";
 import NetflixRow from "./NetflixRow";
 
-
 function NetflixtvShows() {
   return (
     <Container>
