@@ -6,6 +6,7 @@ import NetflixFooter from "./Components/NetflixFooter";
 import Home from "./Components/Home";
 import NetflixtvShows from "./Components/NetflixtvShows";
 import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
+import MovieDetail from "./Components/MovieDetail";
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
         <Container fluid className="bg-dark text-white h-100 flex-grow-1 ">
           <NetflixNav />
           <div className="flex-grow-1 ">
-          <Routes>
-            <Route element={<Home />} path="/" />
-            <Route element={<NetflixtvShows />} path="/tv-shows" />
-          </Routes>
+            <Routes>
+              <Route element={<Home />} path="/Home" />
+              <Route element={<NetflixtvShows />} path="/tv-shows" />
+              <Route element={<MovieDetail />} path="/detail/:movieId" />
+            </Routes>
           </div>
           <NetflixFooter />
         </Container>

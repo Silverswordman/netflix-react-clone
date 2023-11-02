@@ -14,16 +14,24 @@ function NetflixNav() {
           <Col lg={10} className="align-self-center ">
             <Row>
               <Col lg={1}>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
                   <img src={logo} alt="logo" width={"100px"}></img>
                 </Navbar.Brand>
               </Col>
               <Col>
                 <Nav className="me-auto align-items-center flex-column flex-md-row">
-                  <Link className="nav-link" to="/Home">
+                  <Link
+                    className={`nav-link 
+                  ${location.pathname === "/Home" ? "active" : ""}`}
+                    to="/Home"
+                  >
                     <div>Home</div>
                   </Link>
-                  <Link className="nav-link " to="/tv-shows">
+                  <Link
+                    className={`nav-link 
+                  ${location.pathname === "/tv-shows" ? "active" : ""}`}
+                    to="/tv-shows"
+                  >
                     <div>Tv Shows</div>
                   </Link>
                 </Nav>

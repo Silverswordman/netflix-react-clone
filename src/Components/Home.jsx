@@ -1,9 +1,13 @@
 import { Container } from "react-bootstrap";
-import { Link } from 'react-router-dom'
+
+import MovieDetail from "./MovieDetail";
 
 function Home() {
-  return <Container>
-    HOME 
-  </Container>;
+  return (
+    <Container>
+      Check movie detail
+      <MovieDetail></MovieDetail>
+    </Container>
+  );
 }
 export default Home;
