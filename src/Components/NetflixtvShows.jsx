@@ -2,6 +2,8 @@ import { Button, Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Dropdown from "react-bootstrap/Dropdown";
+import NetflixRow from "./NetflixRow";
+
 
 function NetflixtvShows() {
   return (
@@ -49,6 +51,18 @@ function NetflixtvShows() {
           </Row>
         </Col>
       </Row>
+
+      <Row className="fs-3 my-2"> Lord of the Rings</Row>
+
+      <NetflixRow propId={"lord+of+the+rings"} />
+
+      <Row className="fs-3 my-2">Game of Thrones</Row>
+
+      <NetflixRow propId={"Game+of+thrones"} />
+
+      <Row className="fs-3 my-2">La tua scelta Disney</Row>
+
+      <NetflixRow propId={"Disney"} />
     </Container>
   );
 }

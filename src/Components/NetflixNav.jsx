@@ -2,8 +2,11 @@ import { Container, Nav, Navbar, Row } from "react-bootstrap";
 import logo from "../Assets/logo.png";
 import Col from "react-bootstrap/Col";
 import Dropdown from "react-bootstrap/Dropdown";
+import { Link, useLocation } from "react-router-dom";
 
 function NetflixNav() {
+  const location = useLocation();
+
   return (
     <Navbar bg="dark" data-bs-theme="dark">
       <Container fluid className="p-1 mx-2 ">
@@ -17,13 +20,12 @@ function NetflixNav() {
               </Col>
               <Col>
                 <Nav className="me-auto align-items-center flex-column flex-md-row">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#tvshow" active>
-                    TV Shows
-                  </Nav.Link>
-                  <Nav.Link href="#movies">Movies</Nav.Link>
-                  <Nav.Link href="#added">Recently Added</Nav.Link>
-                  <Nav.Link href="#mylist">My List</Nav.Link>
+                  <Link className="nav-link" to="/Home">
+                    <div>Home</div>
+                  </Link>
+                  <Link className="nav-link " to="/tv-shows">
+                    <div>Tv Shows</div>
+                  </Link>
                 </Nav>
               </Col>
             </Row>
@@ -31,16 +33,16 @@ function NetflixNav() {
 
           <Col className=" align-self-center ">
             <Row className="justify-content-end flex-row py-3 py-md-0">
-              <Col xs={1}lg={1}>
+              <Col xs={1} lg={1}>
                 <i class="bi bi-search"></i>
               </Col>
-              <Col xs={2}lg={2}>
+              <Col xs={2} lg={2}>
                 <span>KIDS</span>
               </Col>
-              <Col xs={1}lg={1}>
+              <Col xs={1} lg={1}>
                 <i class="bi-bell-fill"></i>
               </Col>
-              <Col xs={1}lg={1}>
+              <Col xs={1} lg={1}>
                 <Dropdown>
                   <Dropdown.Toggle
                     variant="secondary"

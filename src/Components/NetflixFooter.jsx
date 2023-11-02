@@ -152,7 +152,7 @@ function NetflixFooter() {
           </Col>
           <Col className="text-start ps-lg-5">
             <p class="text-white-50 my-1">
-              <small> &copy 1997-2017 Netflix,inc </small>
+              <small> © 1997-2017 Netflix,inc </small>
             </p>
           </Col>
         </Row>
