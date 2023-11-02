@@ -11,7 +11,7 @@ const SingleFilmCard = ({ movie }) => {
         navigate(`/Detail/${movie.imdbID}`);
       }}
     >
-      <Card.Img variant="top" src={movie.Poster} />
+      <Card.Img variant="top" src={movie.Poster} className="h-75" />
       <Card.Body className="bg-dark text-white ">
         <Card.Title className="text-truncate ">
           {<small>{movie.Title}</small>}

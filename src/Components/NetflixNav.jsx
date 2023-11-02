@@ -29,7 +29,7 @@ function NetflixNav() {
                   }`}
                     to="/Home"
                   >
-                    <div>Home</div>
+                    Home
                   </Link>
                   <Link
                     className={`nav-link 
@@ -40,7 +40,7 @@ function NetflixNav() {
                   }`}
                     to="/tv-shows"
                   >
-                    <div>Tv Shows</div>
+                    Tv Shows
                   </Link>
                 </Nav>
               </Col>
