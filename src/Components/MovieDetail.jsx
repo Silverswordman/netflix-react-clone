@@ -63,6 +63,19 @@ const MovieDetail = () => {
       });
   };
 
+  //   const sendComment =() => {
+
+  //     fetch(
+  //       `https://striveschool-api.herokuapp.com/api/comments/${params.movieId}`,
+  //       {
+  //         headers: {
+  //           Authorization:
+  //             "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTNhNTkyNmY2ZTNkZDAwMTQ5NWU0M2UiLCJpYXQiOjE2OTgzMjI3MjYsImV4cCI6MTY5OTUzMjMyNn0.t792lvszvowBQgvfJlQPO9EnIQjIC7V8g34hvfewPAg",
+  //         },
+  //       }
+  //     )
+  //   }
+
   return (
     <Row className="justify-content-center ">
       <Col lg={6}>
@@ -89,17 +102,28 @@ const MovieDetail = () => {
                 </Card.Text>
                 <Card.Text>{details.imdbRating}</Card.Text>
               </Card.Body>
+
+              {/* COMMENTI */}
+              <ListGroup>
+                {comments.map((commento) => (
+                  <ListGroupItem
+                    key={commento._id}
+                    className="bg-dark text-white-50 rounded-0 text-start p-0 px-3 "
+                  >
+                    <p className="border border-bottom-1 border-secondary-subtle p-1">
+                      {" "}
+                      {commento.author} ha scritto:
+                    </p>
+                    <p className="fst-italic"> {commento.comment} </p>
+                    <p>
+                      Voto: <span className="fw-bold"> {commento.rate} </span>
+                    </p>
+                  </ListGroupItem>
+                ))}
+              </ListGroup>
             </Col>
           </Row>
-          <Row>
-            <ListGroup>
-              {comments.map((commento) => (
-                <ListGroupItem key={commento._id}>
-                  {commento.comment}
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </Row>
+          <Row></Row>
         </Card>
       </Col>
     </Row>

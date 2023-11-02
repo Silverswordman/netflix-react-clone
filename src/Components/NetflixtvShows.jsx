@@ -59,9 +59,9 @@ function NetflixtvShows() {
 
       <NetflixRow propId={"Game+of+thrones"} />
 
-      <Row className="fs-3 my-2">La tua scelta Disney</Row>
+      <Row className="fs-3 my-2">La magia di Harry Potter</Row>
 
-      <NetflixRow propId={"Disney"} />
+      <NetflixRow propId={"harry+potter"} />
     </Container>
   );
 }
